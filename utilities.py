@@ -16,11 +16,7 @@ def get_page_html(title: str) -> str:
     Returns:
         html of the page
     """
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 03b191cb8789e4582f69ad333e6ff175ac992678
     for attempt in range(5):
         response = requests.get(
             "https://en.wikipedia.org/w/api.php",
