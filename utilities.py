@@ -2,6 +2,7 @@
 import re, string, calendar
 from wikipedia import WikipediaPage
 from bs4 import BeautifulSoup
+import requests, time
 
 from typing import List, Match
 
@@ -15,7 +16,11 @@ def get_page_html(title: str) -> str:
     Returns:
         html of the page
     """
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 03b191cb8789e4582f69ad333e6ff175ac992678
     for attempt in range(5):
         response = requests.get(
             "https://en.wikipedia.org/w/api.php",
